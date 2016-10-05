@@ -1,6 +1,6 @@
 package wk5_lecture;
 
-public class CommisionEmployee extends Object {
+public class CommissionEmployee extends Object {
 	private final String _firstName;
 	private final String _lastName;
 	private final String _socialSecurityNumber;
@@ -17,7 +17,7 @@ public class CommisionEmployee extends Object {
 	 * @param grossSales
 	 * @param commisionRate
 	 */
-	public CommisionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales,
+	public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales,
 			double commisionRate) {
 
 		this.setGrossSales(grossSales);
@@ -68,12 +68,9 @@ public class CommisionEmployee extends Object {
 		return this.getCommisionRate() * this.getGrossSales();
 	}
 
+	@Override
 	public String toString() {
-		String result = "";
-		result += String.format("%s %s %n", this.getFirstName(), this.getLastName());
-		result += String.format("%s%n", this.getSocialSecurityNumber());
-		result += String.format("%.2f%n", this.getGrossSales());
-		result += String.format("%.2f", this.getCommisionRate());
-		return result;
+		return String.format("Name: %s %s%nSSN: %s%nGross Pay: %.2f%nCommission Rate: %.2f%n", this.getFirstName(),
+				this.getLastName(), this.getSocialSecurityNumber(), this.getGrossSales(), this.getCommisionRate());
 	}
 }

@@ -1,9 +1,9 @@
 package wk5_lecture;
 
-public class CommisionEmployeeTest {
+public class CommissionEmployeeTest {
 
 	public static void main(String[] args) {
-		CommisionEmployee employee = new CommisionEmployee("Wallace", "Balaniuc", "222-222-222", 10000, .06);
+		CommissionEmployee employee = new CommissionEmployee("Wallace", "Balaniuc", "222-222-222", 10000, .06);
 
 		 System.out.println("Employee information object by get methods:\n");
 		// System.out.printf("%n%s %s %n", employee.getFirstName(),
